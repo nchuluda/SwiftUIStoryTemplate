@@ -1,30 +1,24 @@
 import SwiftUI
 
-// Use the relevant folders and swift files to code your chapter of the story. Keep ContentView as-is, unless you want a different type of navigation in your story.
 struct ContentView: View {
+    @State var tabSelection = 1
+    
     var body: some View {
-        TabView {
-            Chapter1View()
-                .tabItem {
-                    Label("Chapter 1", systemImage: "1.circle")
-                }
-            Chapter2View()
-                .tabItem {
-                    Label("Chapter 2", systemImage: "2.circle")
-                }
-            Chapter3View()
-                .tabItem {
-                    Label("Chapter 3", systemImage: "3.circle")
-                }
-            Chapter4View()
-                .tabItem {
-                    Label("Chapter 4", systemImage: "4.circle")
-                }
-            Chapter5View()
-                .tabItem {
-                    Label("Chapter 5", systemImage: "5.circle")
-                }
+        TabView(selection: $tabSelection) {
+            Chapter1Preview(tabSelection: $tabSelection)
+                .tag(1)
+            Chapter2Preview()
+                .tag(2)
+            Chapter3Preview()
+                .tag(3)
+            Chapter4Preview(tabSelection: $tabSelection)
+                .tag(4)
+            Chapter5Preview(tabSelection: $tabSelection)
+                .tag(5)
         }
+        .tabViewStyle(.page)
+        .ignoresSafeArea()
+        .preferredColorScheme(.dark)
     }
 }
 

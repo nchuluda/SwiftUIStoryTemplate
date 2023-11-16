@@ -1,11 +1,16 @@
 import SwiftUI
 
 struct Chapter4View: View {
+
+    
     var body: some View {
-        Text("Chapter 4")
+//        LightBroken(story: StoryVM())
+        Text("C4View")
     }
 }
 
 #Preview {
     Chapter4View()
 }
+
+
