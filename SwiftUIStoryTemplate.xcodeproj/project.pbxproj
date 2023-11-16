@@ -16,6 +16,14 @@
 		5DE6F6822AFAE3EA004ABB4F /* Chapter3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6F6812AFAE3EA004ABB4F /* Chapter3View.swift */; };
 		5DE6F6842AFAE3EF004ABB4F /* Chapter4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6F6832AFAE3EF004ABB4F /* Chapter4View.swift */; };
 		5DE6F6862AFAE3F3004ABB4F /* Chapter5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6F6852AFAE3F3004ABB4F /* Chapter5View.swift */; };
+		D80CC6762B0445ED00823CE5 /* StoryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CC6752B0445ED00823CE5 /* StoryVM.swift */; };
+		D80CC6782B05194900823CE5 /* Chapter4Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CC6772B05194900823CE5 /* Chapter4Preview.swift */; };
+		D80CC67A2B05601E00823CE5 /* Chapter2Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CC6792B05601E00823CE5 /* Chapter2Preview.swift */; };
+		D80CC67C2B05602C00823CE5 /* Chapter3Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CC67B2B05602C00823CE5 /* Chapter3Preview.swift */; };
+		D80CC67E2B0594C500823CE5 /* Chapter1Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CC67D2B0594C500823CE5 /* Chapter1Preview.swift */; };
+		D80CC6802B05ADE000823CE5 /* Chapter5Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CC67F2B05ADE000823CE5 /* Chapter5Preview.swift */; };
+		D8B90A9C2B03AD3E00FCA8BB /* LightBroken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B90A9B2B03AD3E00FCA8BB /* LightBroken.swift */; };
+		D8B90AA22B03D6FB00FCA8BB /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B90AA12B03D6FB00FCA8BB /* Story.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +37,14 @@
 		5DE6F6812AFAE3EA004ABB4F /* Chapter3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3View.swift; sourceTree = "<group>"; };
 		5DE6F6832AFAE3EF004ABB4F /* Chapter4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4View.swift; sourceTree = "<group>"; };
 		5DE6F6852AFAE3F3004ABB4F /* Chapter5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter5View.swift; sourceTree = "<group>"; };
+		D80CC6752B0445ED00823CE5 /* StoryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVM.swift; sourceTree = "<group>"; };
+		D80CC6772B05194900823CE5 /* Chapter4Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4Preview.swift; sourceTree = "<group>"; };
+		D80CC6792B05601E00823CE5 /* Chapter2Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2Preview.swift; sourceTree = "<group>"; };
+		D80CC67B2B05602C00823CE5 /* Chapter3Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3Preview.swift; sourceTree = "<group>"; };
+		D80CC67D2B0594C500823CE5 /* Chapter1Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1Preview.swift; sourceTree = "<group>"; };
+		D80CC67F2B05ADE000823CE5 /* Chapter5Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter5Preview.swift; sourceTree = "<group>"; };
+		D8B90A9B2B03AD3E00FCA8BB /* LightBroken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightBroken.swift; sourceTree = "<group>"; };
+		D8B90AA12B03D6FB00FCA8BB /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				5DE6F67D2AFAE3DF004ABB4F /* Chapter1View.swift */,
+				D80CC67D2B0594C500823CE5 /* Chapter1Preview.swift */,
 			);
 			path = Chapter1;
 			sourceTree = "<group>";
@@ -94,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				5DE6F67F2AFAE3E6004ABB4F /* Chapter2View.swift */,
+				D80CC6792B05601E00823CE5 /* Chapter2Preview.swift */,
 			);
 			name = Chapter2;
 			sourceTree = "<group>";
@@ -102,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				5DE6F6812AFAE3EA004ABB4F /* Chapter3View.swift */,
+				D80CC67B2B05602C00823CE5 /* Chapter3Preview.swift */,
 			);
 			path = Chapter3;
 			sourceTree = "<group>";
@@ -110,6 +129,10 @@
 			isa = PBXGroup;
 			children = (
 				5DE6F6832AFAE3EF004ABB4F /* Chapter4View.swift */,
+				D8B90A9B2B03AD3E00FCA8BB /* LightBroken.swift */,
+				D80CC6752B0445ED00823CE5 /* StoryVM.swift */,
+				D8B90AA12B03D6FB00FCA8BB /* Story.swift */,
+				D80CC6772B05194900823CE5 /* Chapter4Preview.swift */,
 			);
 			path = Chapter4;
 			sourceTree = "<group>";
@@ -118,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				5DE6F6852AFAE3F3004ABB4F /* Chapter5View.swift */,
+				D80CC67F2B05ADE000823CE5 /* Chapter5Preview.swift */,
 			);
 			path = Chapter5;
 			sourceTree = "<group>";
@@ -192,13 +216,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D80CC67E2B0594C500823CE5 /* Chapter1Preview.swift in Sources */,
+				D80CC6802B05ADE000823CE5 /* Chapter5Preview.swift in Sources */,
 				5DE6F6822AFAE3EA004ABB4F /* Chapter3View.swift in Sources */,
+				D80CC67C2B05602C00823CE5 /* Chapter3Preview.swift in Sources */,
+				D8B90A9C2B03AD3E00FCA8BB /* LightBroken.swift in Sources */,
 				5DE6F6842AFAE3EF004ABB4F /* Chapter4View.swift in Sources */,
+				D80CC67A2B05601E00823CE5 /* Chapter2Preview.swift in Sources */,
 				5DE6F6722AFADF05004ABB4F /* ContentView.swift in Sources */,
+				D80CC6782B05194900823CE5 /* Chapter4Preview.swift in Sources */,
 				5DE6F6802AFAE3E6004ABB4F /* Chapter2View.swift in Sources */,
 				5DE6F6862AFAE3F3004ABB4F /* Chapter5View.swift in Sources */,
+				D80CC6762B0445ED00823CE5 /* StoryVM.swift in Sources */,
 				5DE6F67E2AFAE3DF004ABB4F /* Chapter1View.swift in Sources */,
 				5DE6F6702AFADF05004ABB4F /* SwiftUIStoryTemplateApp.swift in Sources */,
+				D8B90AA22B03D6FB00FCA8BB /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
