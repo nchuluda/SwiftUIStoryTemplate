@@ -7,16 +7,6 @@
 
 import SwiftUI
 
-
-//var ghosts = ["ghost1", "ghost2", "ghost3", "ghost4", "ghost5", "ghost6", "ghost7", "ghost8"]
-//
-//var shuffledGhosts = ghosts.shuffled()
-
-//let ghost1 = shuffledGhosts[0]
-//let ghost2 = shuffledGhosts[1]
-//let ghost3 = shuffledGhosts[2]
-//let ghost4 = shuffledGhosts[3]
-
 struct LightBroken: View {
 //    @Environment(\.presentationMode) var presentationMode
     @ObservedObject var story: StoryVM
@@ -28,7 +18,7 @@ struct LightBroken: View {
     @State var doorOpacity: Double = 1.0
     @State var doorZoom: Double = 1.0
     @State var numberOfClicks = 0
-    @State var sentence = "Standing outside the bedroom door, Nathan reaches out and turns the doorknob."
+    @State var sentence = "Standing outside the bedroom door, Joey reaches out and turns the doorknob."
     @State var lightOn = false
 
     @State var ghost1Opacity = 0.0

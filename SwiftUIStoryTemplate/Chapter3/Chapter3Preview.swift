@@ -10,6 +10,7 @@ import SwiftUI
 struct Chapter3Preview: View {
     @State var showChapter3: Bool = false
     @State var wave: Bool = false
+    @Binding var tabSelection: Int
 
     var body: some View {
         GeometryReader { geo in
@@ -40,17 +41,20 @@ struct Chapter3Preview: View {
                             .onTapGesture {
                                 showChapter3.toggle()
                             }
+                            .fullScreenCover(isPresented: $showChapter3) {
+                                Chapter3View(showChapter3: $showChapter3, tabSelection: $tabSelection)
+                            }
                     }
                     
-                    if showChapter3 {
-//                        Chapter4View(showChapter4: $showChapter4)
-                        Chapter3View(showChapter3: $showChapter3)
-                }
+//                    if showChapter3 {
+////                        Chapter4View(showChapter4: $showChapter4)
+//                        Chapter3View(showChapter3: $showChapter3, tabSelection: $tabSelection)
+//                }
             }
         }
     }
 }
 
-#Preview {
-    Chapter3Preview()
-}
+//#Preview {
+//    Chapter3Preview()
+//}

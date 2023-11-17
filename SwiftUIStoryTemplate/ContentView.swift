@@ -9,7 +9,7 @@ struct ContentView: View {
                 .tag(1)
             Chapter2Preview()
                 .tag(2)
-            Chapter3Preview()
+            Chapter3Preview(tabSelection: $tabSelection)
                 .tag(3)
             Chapter4Preview(tabSelection: $tabSelection)
                 .tag(4)
