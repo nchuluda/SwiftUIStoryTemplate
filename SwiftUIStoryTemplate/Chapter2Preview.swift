@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct Chapter2Preview: View {
+    
     @State var showChapter2: Bool = false
     @State var wave: Bool = false
+    @Binding var tabSelection: Int
 
     var body: some View {
         GeometryReader { geo in
@@ -42,15 +44,19 @@ struct Chapter2Preview: View {
                             }
                     }
                     
-                    if showChapter2 {
-//                        Chapter4View(showChapter4: $showChapter4)
-                        Chapter2View(showChapter2: $showChapter2)
-                }
+                    .fullScreenCover(isPresented: $showChapter2) {
+                        Chapter2View(showChapter2: $showChapter2, tabSelection: $tabSelection)
+                    }
+                    
+//                    if showChapter2 {
+////                        Chapter4View(showChapter4: $showChapter4)
+//                        Chapter2View(showChapter2: $showChapter2)
+//                }
             }
         }
     }
 }
 
-#Preview {
-    Chapter2Preview()
-}
+//#Preview {
+//    Chapter2Preview()
+//}

@@ -18,6 +18,8 @@ struct allRooms: View {
     @State private var toggleTry = false
     @State var chapterStorey = "Chapter 2"
     @State private var isBeating = false
+    @Binding var showChapter2: Bool
+    @Binding var tabSelection: Int
     
     let impactFeedback = UIImpactFeedbackGenerator(style: .heavy)
     let impactFeedback2 = UIImpactFeedbackGenerator(style: .light)
@@ -38,6 +40,16 @@ struct allRooms: View {
                             .onAppear{startFlashing() }
                             .onDisappear{stopFlashing() }
                         Spacer()
+                        Text("Exit")
+                                             .font(.system(size: 30))
+                                             .padding(.trailing, 25)
+                                             .symbolEffect(.variableColor
+                                                 .hideInactiveLayers)
+                                             .foregroundColor(.red)
+                                             .onTapGesture {
+                                                 showChapter2 = false
+                                                 tabSelection = 3
+                                             }
                         NavigationLink {
                             ContentView() }
                     label: {
@@ -127,6 +139,6 @@ struct allRooms: View {
      
 }
 
-#Preview {
-    allRooms()
-}
+//#Preview {
+//    allRooms()
+//}
