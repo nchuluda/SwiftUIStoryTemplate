@@ -5,6 +5,7 @@ struct Chapter1View: View {
     @Binding var tabSelection: Int
     @State var numberOfClicks: Int = 0
     @State var sentence: String = "One Halloween night, many years ago, some friends were looking for something fun to do."
+    @State var brightness: Double = 0.0
     
     var body: some View {
         GeometryReader { geo in
@@ -13,6 +14,7 @@ struct Chapter1View: View {
                     .resizable()
                     .scaledToFill()
                     .ignoresSafeArea()
+                    .brightness(brightness)
                     .aspectRatio(contentMode: .fill)
                     .frame(width: geo.size.width, height: geo.size.height)
                 VStack {
@@ -75,6 +77,13 @@ struct Chapter1View: View {
         case 5:
             sentence = "When they got there, the friends found the front door ajar, and they walked right in."
         case 6:
+            withAnimation(.easeInOut(duration: 1)) {
+                brightness = -1.0
+            }
+            withAnimation(.easeInOut(duration: 1).delay(1)) {
+                sentence = ""
+            }
+        case 7:
             tabSelection = 2
             showChapter1 = false
         default:
@@ -99,6 +108,9 @@ struct Chapter1View: View {
             sentence = "\"Oh, come on! let's go!\" and so the friends walked in the moonlight to the dark, lonely house on Hill Street."
         case 5:
             sentence = "When they got there, the friends found the front door ajar, and they walked right in."
+            withAnimation(.easeInOut(duration: 1)) {
+                brightness = 0.0
+            }
         default:
             break
         }

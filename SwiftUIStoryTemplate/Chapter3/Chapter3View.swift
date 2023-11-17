@@ -10,6 +10,9 @@ struct Chapter3View: View {
     @State var boat = false
     @State var forestD = false
     @State var kitchenE = false
+    @Binding var showChapter3: Bool
+    @Binding var tabSelection: Int
+
     var body: some View {
         ZStack{
             Image("snakeDoor")
@@ -34,14 +37,8 @@ struct Chapter3View: View {
                                 }
                             }
                         }
-                          
-                            
-
-                            
-                        
                     }
                 }
-                
             }
             VStack{
                     Text(sentence)
@@ -145,6 +142,9 @@ struct Chapter3View: View {
                 kitchenE=true
                 
             }
+        case 26:
+            tabSelection = 4
+            showChapter3 = false
             
         default:
           break
@@ -152,6 +152,6 @@ struct Chapter3View: View {
   }
 }
 
-#Preview {
-    Chapter3View()
-}
+//#Preview {
+//    Chapter3View()
+//}
