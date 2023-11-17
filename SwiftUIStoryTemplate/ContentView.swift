@@ -19,6 +19,7 @@ struct ContentView: View {
         .tabViewStyle(.page)
         .ignoresSafeArea()
         .preferredColorScheme(.dark)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
