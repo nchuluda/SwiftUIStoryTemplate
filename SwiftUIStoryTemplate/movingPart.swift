@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct movingPart: View {
-    
+    @Binding var showChapter2: Bool
+    @Binding var tabSelection: Int
     let impactFeedback = UIImpactFeedbackGenerator(style: .heavy)
     
     @State private var isRotating = 0.0
@@ -46,7 +47,7 @@ struct movingPart: View {
                     Spacer()
                     HStack {
                         NavigationLink {
-                            StoryColors() }
+                            StoryColors(showChapter2: $showChapter2, tabSelection: $tabSelection) }
                         label: {
                             Label("RUN", systemImage: "figure.run.circle")
                                 .foregroundColor(.white)
@@ -81,6 +82,6 @@ struct movingPart: View {
         .navigationBarBackButtonHidden(true)
     }}
 
-#Preview {
-    movingPart()
-}
+//#Preview {
+//    movingPart()
+//}

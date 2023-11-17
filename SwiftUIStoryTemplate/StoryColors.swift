@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct StoryColors: View {
+    @Binding var showChapter2: Bool
+    @Binding var tabSelection: Int
     var body: some View {
         NavigationView {
             VStack {
@@ -44,7 +46,7 @@ struct StoryColors: View {
           
         }
         NavigationLink {
-            allRooms() }
+            allRooms(showChapter2: $showChapter2, tabSelection: $tabSelection) }
     label: {
         Label("RunRunRun", systemImage: "figure.run.circle.fill")
             .foregroundColor(.red)
@@ -57,6 +59,6 @@ struct StoryColors: View {
     }
 }
 
-#Preview {
-    StoryColors()
-}
+//#Preview {
+//    StoryColors()
+//}

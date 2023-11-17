@@ -13,6 +13,8 @@ struct dangerStoryMood: View {
     @State private var toggleTry = false
     @State var chapterStorey = "Chapter 2"
     @State private var isBeating = false
+    @Binding var showChapter2: Bool
+    @Binding var tabSelection: Int
     
     let impactFeedback = UIImpactFeedbackGenerator(style: .heavy)
     let impactFeedback2 = UIImpactFeedbackGenerator(style: .light)
@@ -60,7 +62,7 @@ struct dangerStoryMood: View {
                         .symbolEffect(.variableColor
                             .iterative)
                     NavigationLink {
-                        movingPart() }
+                        movingPart(showChapter2: $showChapter2, tabSelection: $tabSelection) }
                 label: {
                     Label("Turn Around ", systemImage: "")
                         .font(.largeTitle)
@@ -101,6 +103,6 @@ struct dangerStoryMood: View {
     }
 }
 
-#Preview {
-    dangerStoryMood()
-}
+//#Preview {
+//    dangerStoryMood()
+//}

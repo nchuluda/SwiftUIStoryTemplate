@@ -2,6 +2,7 @@ import SwiftUI
 
 struct Chapter2View: View {
     @Binding var showChapter2: Bool
+    @Binding var tabSelection: Int
 
     var body: some View {
         NavigationStack {
@@ -16,6 +17,10 @@ struct Chapter2View: View {
                                          .symbolEffect(.variableColor
                                              .hideInactiveLayers)
                                          .foregroundColor(.red)
+                                         .onTapGesture {
+                                             showChapter2 = false
+                                             tabSelection = 3
+                                         }
                                       
                     NavigationLink {
                         ContentView() }
@@ -60,7 +65,7 @@ struct Chapter2View: View {
                 Spacer()
                 HStack {
                     NavigationLink {
-                        dangerStoryMood() }
+                        dangerStoryMood(showChapter2: $showChapter2, tabSelection: $tabSelection) }
                     label: {
                         Label("Keep Going", systemImage: "")
                             .font(.largeTitle)
